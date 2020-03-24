@@ -73,7 +73,7 @@ html,body{
 }
 
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 500px){
 
     .navbar-links{display: none;}
 
@@ -161,7 +161,15 @@ html,body{
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 500px){
 
+    .side-navbar-links i{left:32%;}
+}
+
+@media only screen and (max-width: 350px){
+
+    .side-navbar-links i{left:25%;}
+}
 
 /* --------------------- hero  --------------------- */
 
@@ -276,6 +284,7 @@ html,body{
 #about p{
     color: rgb(83, 82, 82);
     font-size: 17px;
+    line-height: 25px;
 }
 
 #about h2{ margin-bottom: 15px;}
@@ -473,7 +482,7 @@ html,body{
         height: 170%;
         width: 100%;
     }
-
+    .skills-right{margin-top: 3%;}
     .skills-grid{grid-template-columns:1fr;}
 
     .skills-right ul{width: 70%;} 
@@ -486,6 +495,8 @@ html,body{
         margin:10% 0px;
         font-size: 20px;
     }
+
+    .skills-right{margin-top: 10%;}
 }
 
 @media only screen and (max-width: 300px){
@@ -588,6 +599,7 @@ html,body{
     padding: 10px;
     height: 100%;
     width: 100%;
+    line-height: 26px;
   }
 
   .projects-left h2{
