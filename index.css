@@ -239,7 +239,15 @@ html,body{
     opacity: 1;
 }
 
+@media only screen and (max-width: 600px){
 
+    #hero p{
+            font-size: 19px;
+            margin-top: 5%;
+            margin-bottom: 7%;
+            line-height: 25px;
+        }
+}
 
 @media only screen and (max-width: 360px){
 
@@ -387,7 +395,11 @@ html,body{
         padding: 10px;
         height:350px;
     }
-  
+}
+
+@media only screen and (max-width: 600px){
+    
+    #about p{font-size: 16px;}
 }
 
 @media only screen and (max-width: 300px){
