@@ -1,2 +1,2 @@
 # Portfolio
-you can look at my project in my portfolio.
+You can take a look at my projects in my portfolio.
