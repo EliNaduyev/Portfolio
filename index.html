@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oswald&display=swap" rel="stylesheet"> </head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22132ec076.js" crossorigin="anonymous"></script>
+    <title>Eli Naduyev</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   <nav class="navbar">
+       <h1 class="navbar-logo">Welcome</h1>
+       <ul class="navbar-links">
+           <li><a href="#hero">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
+       <div class="humburger" onclick="showSideNav()">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+       </div>
+   </nav>
+
+   <div class="side-navbar">
+    <h1 class="side-navbar-logo">Welcome</h1>
+    <div class="side-navbar-icons">
+        <a href="https://www.linkedin.com/in/eli-naduyev"><img src="./pictures/linkedin.png" height="40px" width="40px" alt="" target="_blank"> </a>
+        <a href="https://www.facebook.com/eli.naduyev"><img src="./pictures/facebook.png" height="40px" width="40px" alt="" target="_blank"> </a>
+        <a href="https://github.com/EliNaduyev"><img src="./pictures/github.png" height="40px" width="40px" alt="" target="_blank"> </a>
+    </div>
+    <div class="side-navbar-line"></div>
+    <ul class="side-navbar-links">
+        <li onclick="showSideNav()"><i class="fas fa-home links-icon"></i><a href="#hero">Home</a></li>
+        <li  onclick="showSideNav()"><i class="far fa-user links-icon"></i><a href="#about">About</a></li>
+        <li  onclick="showSideNav()"><i class="far fa-file-code links-icon"></i><a href="#skills">Skills</a></li>
+        <li  onclick="showSideNav()"><i class="fas fa-layer-group links-icon"></i><a href="#projects">Projects</a></li>
+        <li  onclick="showSideNav()"><i class="fas fa-address-book links-icon"></i><a href="#contact">Contact</a></li>
+    </ul>
+   </div>
+
+   <section id="hero">
+        <h1>Hello,</h1>
+        <h1>I'm <span class="hero-name-color">Eli Naduyev</span>,</h1>
+        <p>
+            Senior student of Software Engineering <br> with big
+            passion to Web & Application 
+            development.
+        </p>
+        <button class="hero-btn" onclick="showEmail()">Contact Me</button>
+        <h2 class="email">My Email: elisce9091@gmail.com</h2>
+    </section>
+
+
+
+    <section id="about"> 
+        <h1 class="about-header">About</h1>
+        <div class="about-line"></div>
+        <div class="about-grid">
+            <div class="about-pic">
+                <img src="./pictures/my-pic.jpg" alt="">
+            </div>
+            <div class="about-info-left">
+                <h2>Education</h2>
+                <h3>Bachelor of Science</h3>
+                <h3 class="years">2016-2020</h3>
+                <p>
+                    A high achieving Software Engineering 
+                    student studying at Sami Shamoon College 
+                    of Engineering in Ashdod, In the fourth year.
+                </p>
+                <div class="education-para">
+                    <h3>Practical Engineers degree</h3>
+                    <h3 class="years">2011-2013</h3>
+                    <p>
+                        Graduate practical electronics and 
+                        computer engineering through the "Marom 
+                        Technology Project" in Be'er Sheva. 
+                    </p>
+                </div>
+                <div class="education-para">
+                    <h3>Full Matriculation.</h3>
+                    <h3 class="years">2005-2011</h3>
+                    <p>
+                        Full matriculation in the "Ironi-Alef" Ashkelon. 
+                    </p>
+                </div>
+            </div>
+            <div class="about-info-right">
+                <div class="military-service">
+                    <h2>Military Service </h2>
+                    <h3>IDF </h3>
+                    <h3 class="years">2013-2016</h3>
+                    <p class="military-service-para">
+                        Full operational service in the Gaza 
+                        Division as a tactical communication technician 
+                        in the "tikshuv" force, First Sergeant Release.
+                    </p>
+                    <p class="military-service-para">
+                        I managed teams up to 5-6 people in the lab and in the field.
+                    </p>         
+                    <p class="military-service-para">
+                        An outstanding soldier with high ability to identify and quickly solve problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h1 class="skills-header">Skills</h1>
+        <div class="skills-header-line"></div>
+        <div class="skills-grid">
+            <div class="skills-left">
+                <h2>Programing Languages & Frameworks</h2>
+                <ul>
+                    <li><i class="devicon-c-plain-wordmark"></i></li>
+                    <li><i class="devicon-cplusplus-plain-wordmark"></i></li>
+                    <li><i class="devicon-python-plain-wordmark"></i></li> 
+                    <li><i class="devicon-java-plain-wordmark"></i></li> 
+                    <li><i class="devicon-html5-plain-wordmark"></i></li> 
+                    <li><i class="devicon-css3-plain-wordmark"></i></li> 
+                    <li><i class="devicon-javascript-plain"></i></li> 
+                    <li><i class="devicon-mysql-plain-wordmark"></i></li>
+                    <li><i class="devicon-nodejs-plain-wordmark"></i></li>
+                    <li><i class="devicon-react-original-wordmark"></i></li>
+                    <li><i class="devicon-mongodb-plain-wordmark"></i></li>
+                </ul>
+            </div>
+
+            <div class="skills-right">
+                <h2 >Academic Experience</h2>
+                <ul>
+                    <li><i class="fas fa-angle-right"></i>Design pattern</li>
+                    <li><i class="fas fa-angle-right"></i>OOP</li>
+                    <li><i class="fas fa-angle-right"></i>Computer architecture</li>
+                    <li><i class="fas fa-angle-right"></i>Operating systems</li>
+                    <li><i class="fas fa-angle-right"></i>Data structures</li>
+                    <li><i class="fas fa-angle-right"></i>Algorithms</li>
+                    <li><i class="fas fa-angle-right"></i>Network protocols</li>
+                    <li><i class="fas fa-angle-right"></i>Multithreading</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="projects-header">Projects</h1>
+        <div class="projects-header-line"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="projects-grid">
+                    <div class="projects-left">
+                        <h2>XSS Scanner <img class="logos" src="./pictures/js-logo.png" alt="js-logo"></h2>
+                        <p>
+                            Following OWASP TOP 10 (the top ten most critical web application 
+                            security risk) I decided to build an XSS Scanner.
+                            In the Frontend I used <b>Vanilla Javascript</b> and in the Backend I used 
+                            <b>NodeJS</b> and <b>Express</b> for the server and <b>Puppeteer</b> for automation. 
+                        </p>
+                        <p>
+                            Puppeteer is an open source library developed by Google that was 
+                            built in purpose of automating and simplifying tests and development.
+                            
+                            The scanner getting link from the user and scan the website for 
+                            XSS vulnerability by injecting malicious script and check if the 
+                            website is running the script.
+                            The scanner is trying to inject variety of scripts for better results.
+                        </p>                   
+                     </div>
+
+                    <div class="projects-right">
+                        <video id="vid-1"  controls >
+                            <source  src="./pictures/xss_scanner.mp4"  type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="projects-grid">
+                    <div class="projects-left">
+                        <h2>Vehicle Agency <img class="logos" src="./pictures/java-logo.svg" alt="java-logo">  </h2>
+                        <p>
+                            In this project I build vehicle agency  that have different types of  
+                            vehicles and variety of functionality for example  to take vehicle 
+                            for  test drive, buy vehicles, check vehicle history and much more.  
+                        </p>
+                        <p>
+                            The development language is <b>Java</b> and the IDE  I worked with is Eclipse.
+                            Some principles  were implemented in the project like <b>Multithreading</b>, 
+                            <b>Locks synchronization</b>, <b>Design Patterns</b>, <b>OOP</b> and <b>Interfaces</b>. 
+                        </p>                    
+                    </div>
+
+                    <div class="projects-right">
+                        <video id="vid-1" controls >
+                            <source  src="./pictures/vid.mp4"  type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="projects-grid">
+                    <div class="projects-left">
+                        <h2>Music Encryption <img class="logos" src="./pictures/python-logo.svg" alt="python-logo"> </h2>
+                            <p>
+                                In this project I build with my team software in 
+                                Python for sending messages <b>secretly</b> the project 
+                                divided into two main tasks.  
+                            </p>
+                            <p>
+                                first one is to <b>concealing</b>  
+                                the message in the audio file (.WAV) so if someone 
+                                will get the file and listen to it they will not pay 
+                                attention the file was change because the sounds didn't 
+                                change, and the second is the <b>encryption</b>.
+                            </p>
+                            <p>
+                                we use  deterministic public key encryption <b>RSA</b>. 
+                                So, let's say the attacker knows there is a message 
+                                inside the audio file he still cannot read the message
+                            </p>                   
+                         </div>
+
+                    <div class="projects-right">
+                        <video id="vid-1" controls >
+                            <source  src="./pictures/music_encryption.mp4"  type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> 
+    </section>
+
+   <section id="contact">
+       <div class="contact-me">
+           <div class="contact-me-center">
+                <h3>In conclusion</h3>
+                <p>
+                    I have a great passion for Web and Applications development
+                    I have an open mind and interested in learning new things and technologies.
+                </p>
+           </div>
+       </div>
+
+       <div class="contact-icons">
+            <div class="contact-icons-center">
+                <h3 >Lets Be In Touch</h3>
+                <a href="https://www.linkedin.com/in/eli-naduyev"><img src="./pictures/linkedin.png" height="40px" width="40px" alt="" target="_blank"> </a>
+                <a href="https://www.facebook.com/eli.naduyev"><img src="./pictures/facebook.png" height="40px" width="40px" alt="" target="_blank"> </a>
+                <a href="https://github.com/EliNaduyev"><img src="./pictures/github.png" height="40px" width="40px" alt="" target="_blank"> </a>
+            </div>
+       </div>
+
+       <div class="contact-links">
+            <div class="contact-links-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+       </div>
+    </section>
+
+    <footer>
+        <div class="footer-hr"></div>
+        Copyright ©2020 All rights reserved | Made by Eli Naduyev
+    </footer>
+
+    
+
+   <script src="index.js"></script>
+</body>
+</html>
