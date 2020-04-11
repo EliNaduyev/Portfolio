@@ -10,6 +10,50 @@ const showEmail = () => {
     email.classList.toggle("show-email");
 }
 
+
+const scrollEffectInAbout = () =>{
+  let about = document.querySelector('.about-grid')
+
+  let aboutPosition = about.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1.5;
+
+  if(aboutPosition < screenPosition){about.classList.add('about-grid-show');}
+  else{about.classList.remove('about-grid-show')}
+}
+
+
+
+
+const scrollEffectInSkills = () =>{
+  let skillsLeft = document.querySelector('.skills-left')
+  let skillsRight = document.querySelector('.skills-right')
+
+  let skillsLeftPosition = skillsLeft.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1.5;
+
+  if(skillsLeftPosition < screenPosition){
+    skillsLeft.classList.add('skills-left-show');
+    skillsRight.classList.add('skills-right-show');
+  }
+  else{
+    skillsLeft.classList.remove('skills-left-show');
+    skillsRight.classList.remove('skills-right-show');
+  }
+}
+
+const scrollEffectInProjects = () =>{
+  let projects = document.querySelector('.projects-left-first')
+
+  let aboutPosition = projects.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight/1.5;
+
+  if(aboutPosition < screenPosition){projects.classList.add('projects-left-first-show');}
+  else{projects.classList.remove('projects-left-first-show')}
+}
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,3 +80,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+
+
+window.addEventListener('scroll',scrollEffectInAbout)
+window.addEventListener('scroll',scrollEffectInSkills)
+window.addEventListener('scroll',scrollEffectInProjects)
