@@ -289,6 +289,8 @@ html,body{
     padding-top: 70px;
 }
 
+
+
 #about p{
     color: rgb(83, 82, 82);
     font-size: 17px;
@@ -318,6 +320,14 @@ html,body{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     position: relative;
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.about-grid-show{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .about-pic{
@@ -441,6 +451,8 @@ html,body{
     grid-template-columns: 1fr 1fr;
 }
 
+
+
 .skills-grid ul{list-style: none;}
 
 .skills-grid h2{
@@ -452,6 +464,14 @@ html,body{
     height: 100%;
     width: 100%;
     text-align: center;
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.skills-left-show{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .skills-left ul{
@@ -468,6 +488,14 @@ html,body{
 .skills-right{
     height: 100%;
     width: 100%;
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.skills-right-show{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .skills-right h2{text-align: center;} 
@@ -612,6 +640,24 @@ html,body{
     height: 100%;
     width: 100%;
     line-height: 26px;
+  }
+
+  
+
+  .projects-left-first{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    line-height: 26px;
+
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .projects-left-first-show{
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .projects-left h2{
