@@ -1,5 +1,4 @@
 
-
 const showSideNav = () => {
     let humburger = document.querySelector('.side-navbar')
     humburger.classList.toggle('show-side-navbar')
@@ -10,7 +9,6 @@ const showEmail = () => {
     email.classList.toggle("show-email");
 }
 
-
 const scrollEffectInAbout = () =>{
   let about = document.querySelector('.about-grid')
 
@@ -20,9 +18,6 @@ const scrollEffectInAbout = () =>{
   if(aboutPosition < screenPosition){about.classList.add('about-grid-show')}
   else{about.classList.remove('about-grid-show')}
 }
-
-
-
 
 const scrollEffectInSkills = () =>{
   let skillsLeft = document.querySelector('.skills-left')
@@ -51,19 +46,12 @@ const scrollEffectInProjects = () =>{
   else{projects.classList.remove('projects-left-first-show')}
 }
 
-
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+function plusSlides(n) {showSlides(slideIndex += n);}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function currentSlide(n) {showSlides(slideIndex = n);}
 
 function showSlides(n) {
   let i;
