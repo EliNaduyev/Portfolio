@@ -750,7 +750,6 @@ html,body{
     #projects{
         height: 160%;
         width: 100%;
-        border: 1px solid black;
     }
 
     .projects-grid{
