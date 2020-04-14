@@ -381,7 +381,7 @@ html,body{
 
 
     #about{
-        margin-bottom: 20%;
+        margin-bottom: 10%;
         height: 215%;
     }
 
@@ -398,7 +398,7 @@ html,body{
 
     .about-info-left{
         padding: 10px;
-        height:500px;
+        height:430px;
     }
 
     .about-info-right{
@@ -412,11 +412,36 @@ html,body{
     #about p{font-size: 16px;}
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 464px){
+    
+    .about-info-left{
+        height:460px;
+    }
+}
 
-    #about{margin-bottom: 50%;}
+@media only screen and (max-width: 395px){
+    
+    .about-info-left{
+        height:500px;
+    }
+}
+
+@media only screen and (max-width: 326px){
+
+    #about
+    {
+        height: 215%;
+        margin-bottom: 65%;
+    }
+   
 
     #about p{font-size: 15px;}
+}
+
+@media only screen and (max-width: 310px){
+    .about-info-left{
+        margin-bottom: 15%;
+    }
 }
 
 
@@ -506,8 +531,8 @@ html,body{
 }
 
 .skills-right li{
-    margin:6% 0px;
-    font-size: 20px;
+    margin:5% 0px;
+    font-size: 19px;
 }
 .skills-right i{
     margin-right: 4%;
@@ -519,7 +544,7 @@ html,body{
 @media only screen and (max-width: 900px){
 
     #skills{
-        height: 170%;
+        height: 180%;
         width: 100%;
     }
     .skills-right{margin-top: 3%;}
@@ -532,6 +557,17 @@ html,body{
 @media only screen and (max-width: 600px){
 
     .skills-right li{
+        margin:7% 0px;
+        font-size: 20px;
+    }
+
+    .skills-right{margin-top: 10%;}
+}
+
+
+@media only screen and (max-width: 450px){
+
+    .skills-right li{
         margin:10% 0px;
         font-size: 20px;
     }
@@ -541,16 +577,15 @@ html,body{
 
 @media only screen and (max-width: 300px){
 
+    #skills{height: 180%;}
     .skills-grid h2{margin-bottom: 15%;}
-
+  
     .skills-right li{
-        margin:13% 0px;
+        margin:10% 0px;
         font-size: 18px;
     }
 
-    .skills-right h2{
-        margin-top: 10%;
-    } 
+    .skills-right h2{margin-top: 10%;} 
 }
 
 
@@ -601,6 +636,9 @@ html,body{
     display: inline-block;
     transition: background-color 0.6s ease;
   }
+  .dots{
+      text-align: center;
+  }
   
   .active, .dot:hover {background-color:rgb(66, 103, 178);}
   
@@ -635,14 +673,19 @@ html,body{
       text-align: center; 
   }
 
+  .codewars-logo{
+    width:90%;
+    height:70%;
+    margin: auto; 
+    text-align: center; 
+}
+
   .projects-left{
     padding: 10px;
     height: 100%;
     width: 100%;
     line-height: 26px;
   }
-
-  
 
   .projects-left-first{
     padding: 10px;
@@ -666,7 +709,19 @@ html,body{
     display: flex;
     align-items: center;
 }
+
+.projects-left-first h2{
+    margin-bottom: 3%;
+    color: rgb(50, 147, 185);
+    display: flex;
+    align-items: center;
+}
 .projects-left p{
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+
+.projects-left-first p{
     margin-bottom: 2%;
     font-size: 18px;
 }
@@ -683,6 +738,12 @@ html,body{
     width: 40px;
   }
 
+.react-logo{
+    margin-left: 2%;
+    height: 55px;
+    width: 80px;
+  }
+
 
   @media only screen and (max-width: 900px){
 
@@ -695,6 +756,12 @@ html,body{
         height: 110%;
         grid-template-columns: 1fr;
     }
+  }
+
+
+  @media only screen and (max-width: 370px){
+      .projects-left{overflow-y: scroll;}
+      .projects-left-first{overflow-y: scroll;}
   }
 
 
@@ -809,7 +876,6 @@ html,body{
         text-align: center;
         width: 80%;
     }
-
 
     .contact-links{
         height:100%;
