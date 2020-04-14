@@ -748,14 +748,16 @@ html,body{
   @media only screen and (max-width: 900px){
 
     #projects{
-        height: 170%;
+        height: 160%;
         width: 100%;
+        border: 1px solid black;
     }
 
     .projects-grid{
         height: 110%;
         grid-template-columns: 1fr;
     }
+    .dots{margin-top: 12%;}
   }
 
 
