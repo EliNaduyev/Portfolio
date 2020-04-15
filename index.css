@@ -293,9 +293,11 @@ html,body{
 
 #about p{
     color: rgb(83, 82, 82);
-    font-size: 17px;
+    font-size: 19px;
     line-height: 25px;
 }
+
+
 
 #about h2{ margin-bottom: 15px;}
 
@@ -409,7 +411,7 @@ html,body{
 
 @media only screen and (max-width: 600px){
     
-    #about p{font-size: 16px;}
+    #about p{font-size: 17px;}
 }
 
 @media only screen and (max-width: 464px){
@@ -757,6 +759,14 @@ html,body{
         grid-template-columns: 1fr;
     }
     .dots{margin-top: 12%;}
+
+    .projects-left p{
+        font-size: 17px;
+    }
+    
+    .projects-left-first p{
+        font-size: 17px;
+    }
   }
 
 
