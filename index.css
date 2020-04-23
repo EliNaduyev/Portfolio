@@ -284,27 +284,15 @@ html,body{
 
 
 #about{
-    height: 100%;
-    width: 100%;
     padding-top: 70px;
+    width: 98%;
+    margin: 0 auto;
 }
-
-
-
-#about p{
-    color: rgb(83, 82, 82);
-    font-size: 19px;
-    line-height: 25px;
-}
-
-
-
-#about h2{ margin-bottom: 15px;}
 
 .about-header{
     font-size: 30px;
     color:rgb(23, 59, 108);
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 
@@ -312,16 +300,14 @@ html,body{
     border: 2px solid rgb(38, 64, 177);
     width: 50px;
     margin-top: 5px;
+    margin-bottom: 30px;
     margin-left: 15px;
 }
 
-
 .about-grid{
-    height: 75%;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    position: relative;
+    margin-bottom: 50px;
     transition: 0.5s all ease-in-out;
     opacity: 0;
     transform: translateY(30px);
@@ -332,36 +318,15 @@ html,body{
     transform: translateY(0px);
 }
 
-.about-pic{
-    height: 100%;
-    width: 100%;
-    position: relative;
+#about p{
+    color: rgb(83, 82, 82);
+    font-size: 19px;
+    line-height: 25px;
 }
 
-.about-pic img{
-    height: 72%;
-    width: 74%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+#about h3{margin-top: 12px;}
 
-}
-
-.about-info-left{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-
-}
-
-.about-info-right{
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-}
-
+#about h2{color:rgb(38, 77, 133);}
 
 .years{
     background-color: rgb(226, 236, 250);
@@ -374,76 +339,35 @@ html,body{
     padding-top: 4px;
 }
 
-.education-para{margin-top: 15px;}
+.about-pic{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
 
-.military-service-para{margin-top: 15px;}
+.about-pic img{
+    height: 380px;
+    width:  250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
 
+.about-info-left{padding: 15px;}
+
+.about-info-right{padding: 15px;}
 
 @media only screen and (max-width: 900px){
 
+    .about-grid{grid-template-columns: 1fr;}
 
-    #about{
-        margin-bottom: 10%;
-        height: 215%;
-    }
-
-    .about-grid{
-        height: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .about-pic{
-        height:400px;
-        width:250px;
-    }
-
-
-    .about-info-left{
-        padding: 10px;
-        height:430px;
-    }
-
-    .about-info-right{
-        padding: 10px;
-        height:350px;
+    .about-pic img{
+        height: 300px;
+        width:  200px;
     }
 }
 
 @media only screen and (max-width: 600px){
     
     #about p{font-size: 17px;}
-}
-
-@media only screen and (max-width: 464px){
-    
-    .about-info-left{
-        height:460px;
-    }
-}
-
-@media only screen and (max-width: 395px){
-    
-    .about-info-left{
-        height:500px;
-    }
-}
-
-@media only screen and (max-width: 326px){
-
-    #about
-    {
-        height: 215%;
-        margin-bottom: 65%;
-    }
-   
-
-    #about p{font-size: 15px;}
-}
-
-@media only screen and (max-width: 310px){
-    .about-info-left{
-        margin-bottom: 15%;
-    }
 }
 
 
