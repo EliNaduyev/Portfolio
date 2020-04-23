@@ -40,14 +40,16 @@ html,body{
     font-size: 20px;
 }
 
+
 .navbar-links a{
     text-decoration: none;
-    color:white;
-    transition: 0.2s all ease-in-out;
+    display: block;
+    color: rgb(255, 255, 255);
+    transition: 0.3s all ease-in-out;    
 }
 
 .navbar-links a:hover{
-    font-size: 21px;
+    transform: scale(1.2);
     color: rgb(238, 117, 117);
 }
 
@@ -124,7 +126,10 @@ html,body{
     text-align: center;
 }
 
-.side-navbar-links li{margin-bottom: 25px;}
+.side-navbar-links li{
+    margin-bottom: 25px;
+    height: 25px;
+}
 
 .side-navbar-links a{
     font-size: 20px;
@@ -141,7 +146,7 @@ html,body{
 }
 
 .side-navbar-links a:hover{
-    font-size: 22px;
+    font-size: 24px;
     color: rgb(238, 117, 117);
 }
 
@@ -375,9 +380,8 @@ html,body{
 
 
 #skills{
-    height: 100%;
-    width: 100%;
     padding-top: 70px;
+    padding-bottom: 70px;
     background-color: rgb(245, 248, 253);
 }
 
@@ -396,30 +400,29 @@ html,body{
 }
 
 .skills-grid{
-    height: 80%;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    width: 98%;
+    margin: 0 auto;
 }
-
-
 
 .skills-grid ul{list-style: none;}
 
 .skills-grid h2{
-    margin-bottom: 5%;
+    padding: 15px;
     color: rgb(50, 147, 185);
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .skills-left{
-    height: 100%;
-    width: 100%;
     text-align: center;
+    margin-bottom: 30px;
     transition: 0.5s all ease-in-out;
     opacity: 0;
     transform: translateY(30px);
 }
-
 .skills-left-show{
     opacity: 1;
     transform: translateY(0px);
@@ -428,90 +431,59 @@ html,body{
 .skills-left ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.skills-left li{margin:6% 0px;}
+.skills-left li{margin:15px 0px;}
 
-.skills-left i{font-size: 40px;}
+.skills-left i{font-size: 43px;}
 
 .skills-right{
-    height: 100%;
-    width: 100%;
+    margin-bottom: 10px;
     transition: 0.5s all ease-in-out;
     opacity: 0;
     transform: translateY(30px);
 }
-
 .skills-right-show{
     opacity: 1;
     transform: translateY(0px);
 }
 
-.skills-right h2{text-align: center;} 
-
 .skills-right ul{
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .skills-right li{
-    margin:5% 0px;
-    font-size: 20px;
+    margin: 15px 0;
+    font-size: 21px;
 }
 .skills-right i{
-    margin-right: 4%;
+    margin-right: 10px;
     font-size: 20px;
     color: rgb(83, 187, 228);
 }
 
-
 @media only screen and (max-width: 900px){
 
-    #skills{
-        height: 180%;
-        width: 100%;
-    }
-    .skills-right{margin-top: 3%;}
-    .skills-grid{grid-template-columns:1fr;}
+    .skills-grid{grid-template-columns: 1fr;}
 
-    .skills-right ul{width: 70%;} 
+    .skills-right li{font-size: 20px;}
 }
-
 
 @media only screen and (max-width: 600px){
 
-    .skills-right li{
-        margin:7% 0px;
-        font-size: 20px;
-    }
+    .skills-right li{font-size: 19px;}
 
-    .skills-right{margin-top: 10%;}
+    .skills-right ul{width: 70%;}
 }
 
+@media only screen and (max-width: 400px){
 
-@media only screen and (max-width: 450px){
+    .skills-right li{font-size: 18px;}
 
-    .skills-right li{
-        margin:10% 0px;
-        font-size: 20px;
-    }
-
-    .skills-right{margin-top: 10%;}
-}
-
-@media only screen and (max-width: 300px){
-
-    #skills{height: 180%;}
-    .skills-grid h2{margin-bottom: 15%;}
-  
-    .skills-right li{
-        margin:10% 0px;
-        font-size: 18px;
-    }
-
-    .skills-right h2{margin-top: 10%;} 
+    .skills-right ul{width: 80%;}
 }
 
 
@@ -742,6 +714,10 @@ html,body{
     width: 100%;
     position: relative;
 }
+.contact-icons-flex{
+    display: flex;
+    justify-content: center;
+}
 
 .contact-icons a{
     text-decoration: none;
@@ -749,11 +725,14 @@ html,body{
     cursor: pointer;
 }
 
-.contact-icons img{transition: 0.3s all ease-in-out;}
+.contact-icons img{
+    transition: 0.2s all ease-in-out;
+    display: block;
+}
+
   
 .contact-icons img:hover{
-  height:43px; 
-  width:43px;
+  transform: scale(1.2);
 }
 
 .contact-icons-center{
