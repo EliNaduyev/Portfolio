@@ -284,6 +284,11 @@ html,body{
     }
 }
 
+@media only screen and (max-height: 465px){
+
+    #hero{height: 500px;}
+}
+
 
 /* --------------------- about  --------------------- */
 
