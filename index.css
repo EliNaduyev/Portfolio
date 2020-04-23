@@ -492,9 +492,10 @@ html,body{
 
 
 #projects{
-    height: 100%;
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .projects-header{
@@ -512,8 +513,6 @@ html,body{
 }
 
 .slideshow-container {
-    height: 75%;
-    width: 100%;
     position: relative;
     margin: auto;
   }
@@ -536,6 +535,7 @@ html,body{
   }
   .dots{
       text-align: center;
+      padding: 15px;
   }
   
   .active, .dot:hover {background-color:rgb(66, 103, 178);}
@@ -558,7 +558,6 @@ html,body{
   }
 
   .projects-grid{
-      height: 110%;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -580,7 +579,6 @@ html,body{
 
   .projects-left{
     padding: 10px;
-    height: 100%;
     width: 100%;
     line-height: 26px;
   }
@@ -590,7 +588,6 @@ html,body{
     height: 100%;
     width: 100%;
     line-height: 26px;
-
     transition: 0.5s all ease-in-out;
     opacity: 0;
     transform: translateY(30px);
@@ -625,7 +622,6 @@ html,body{
 }
 
   .projects-right{
-    height: 100%;
     width: 100%;
     display: flex;
 }
@@ -642,34 +638,23 @@ html,body{
     width: 80px;
   }
 
-
   @media only screen and (max-width: 900px){
 
-    #projects{
-        height: 160%;
-        width: 100%;
-    }
+    .projects-grid{grid-template-columns: 1fr;}
 
-    .projects-grid{
-        height: 110%;
-        grid-template-columns: 1fr;
-    }
-    .dots{margin-top: 12%;}
-
-    .projects-left p{
-        font-size: 17px;
-    }
+    .projects-left p{font-size: 18px;}
     
-    .projects-left-first p{
-        font-size: 17px;
-    }
+    .projects-left-first p{font-size: 18px;}
   }
 
+@media only screen and (max-width: 600px){
 
-  @media only screen and (max-width: 370px){
-      .projects-left{overflow-y: scroll;}
-      .projects-left-first{overflow-y: scroll;}
-  }
+    .projects-left p{font-size: 17px;}
+    
+    .projects-left-first p{font-size: 17px;}
+
+    .codewars-logo{height:90%;}
+}
 
 
 
