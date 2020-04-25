@@ -280,7 +280,6 @@ html,body{
     .email{
         font-size: 20px;
         margin-top: 3%;
-   
     }
 }
 
@@ -288,6 +287,7 @@ html,body{
 
     #hero{height: 500px;}
 }
+
 
 
 /* --------------------- about  --------------------- */
@@ -804,3 +804,16 @@ footer{
     margin-bottom: 25px;
     border-top: 1px solid rgb(98, 95, 95);
   }
+
+.visitors{
+    padding-bottom: 15px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px){.footer-flex{display: block;}}
