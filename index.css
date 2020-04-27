@@ -228,20 +228,35 @@ html,body{
     font-size: 17px;  
 }
 
-.email{
-    font-size: 30px;
+.hero-contact-info{
     margin-top: 3%;
-    color: rgb(63, 181, 236);
-    font-family:'Indie Flower', cursive;
-    letter-spacing: 2px;
     transform: translateY(70px);
     transition: 0.5s all ease-in-out;
     opacity: 0;
+    font-family:'Indie Flower', cursive;
+    letter-spacing: 2px;
+    display: inline-block;
 }
 
-.show-email{
+.hero-contact-info h2{
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.blue-color-icon{color: rgb(63, 181, 236);}
+
+.show-hero-contact-info{
     transform: translateY(0);
     opacity: 1;
+}
+.phone-icon{padding-bottom: 8px;}
+
+.hero-contact-info a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 600px){
@@ -282,6 +297,8 @@ html,body{
         margin-top: 3%;
     }
 }
+
+@media only screen and (max-width: 320px){.hero-contact-info h2{font-size: 20px;}}
 
 @media only screen and (max-height: 465px){
 
