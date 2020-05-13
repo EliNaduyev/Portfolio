@@ -1,12 +1,17 @@
 
+window.onload = function(){ 
+  let loading = document.querySelector(".loading-page")
+  loading.classList.add('loading-page-remove')
+}
+
 const showSideNav = () => {
     let humburger = document.querySelector('.side-navbar')
     humburger.classList.toggle('show-side-navbar')
 }
 
 const showEmail = () => {
-    let email = document.querySelector(".hero-contact-info");
-    email.classList.toggle("show-hero-contact-info");
+    let email = document.querySelector(".hero-contact-info")
+    email.classList.toggle("show-hero-contact-info")
 }
 
 const scrollEffectInAbout = () =>{
