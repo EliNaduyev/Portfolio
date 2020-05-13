@@ -21,7 +21,7 @@ html,body{
     font-family:'Indie Flower', cursive;
     align-items:center;
     position: fixed;
-    z-index: 99;
+    z-index: 10;
 }
 
 .navbar-logo{
@@ -806,6 +806,52 @@ html,body{
     .contact-links-center{top: 50%;}
 }
 
+
+.loading-page{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(20, 20, 20,0.8);
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    transition: 0.4s ease-in-out all;
+    opacity: 1;
+}
+
+.loading-page-remove{
+    z-index: -99;
+    opacity: 0;
+}
+
+.loading-page-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+
+}
+
+.loading-page-center h1{
+    color: rgb(226, 226, 226);
+    margin-bottom: 10px;
+    
+}
+
+.loading-page-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.loading-page-center img{
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 360px){.loading-page-center h1{font-size: 20px;}}
 
 footer{
     min-height: 70px;
