@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://kit.fontawesome.com/22132ec076.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <title>Eli Naduyev</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -14,11 +15,11 @@
    <nav class="navbar">
        <h1 class="navbar-logo">Welcome</h1>
        <ul class="navbar-links">
-           <li><a href="#hero">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#contact">Contact</a></li>
+           <li><a class="home-link hover-link" href="#hero">Home</a></li>
+           <li><a class="about-link hover-link init-white" href="#about">About</a></li>
+           <li><a class="skills-link hover-link init-white" href="#skills">Skills</a></li>
+           <li><a class="projects-link hover-link init-white" href="#projects">Projects</a></li>
+           <li><a class="contact-link hover-link init-white" href="#contact">Contact</a></li>
        </ul>
 
        <div class="humburger" onclick="showSideNav()">
@@ -32,7 +33,7 @@
     <h1 class="side-navbar-logo">Welcome</h1>
     <div class="side-navbar-icons">
         <a href="https://www.linkedin.com/in/eli-naduyev"><img src="./pictures/linkedin.png" height="40px" width="40px" alt="" target="_blank"> </a>
-        <a href="https://www.facebook.com/eli.naduyev"><img src="./pictures/facebook.png" height="40px" width="40px" alt="" target="_blank"> </a>
+        <a href="mailto:elisce9091@gmail.com"><img src="./pictures/gmail_Icon.png" height="40px" width="60px" alt="" target="_blank"> </a>
         <a href="https://github.com/EliNaduyev"><img src="./pictures/github.png" height="40px" width="40px" alt="" target="_blank"> </a>
     </div>
     <div class="side-navbar-line"></div>
@@ -48,11 +49,13 @@
    <section id="hero">
         <h1>Hello,</h1>
         <h1>I'm <span class="hero-name-color">Eli Naduyev</span>,</h1>
-        <p>
-            Senior student of Software Engineering <br> with big
-            passion to Web & Application 
-            development.
-        </p>
+
+        <div class="hero-para">
+           <p class="typing-text-1"></p> 
+           <p class="typing-text-2"></p> 
+           <p class="typing-text-3"></p> 
+        </div>
+        
         <button class="hero-btn" onclick="showEmail()">Contact Me</button>
         <br>
         <div class="hero-contact-info">
@@ -78,7 +81,7 @@
             </div>
             <div class="about-info-left">
                 <h2>Education</h2>
-                <h3>Bachelor of Science</h3>
+                <h3 class="sub-title">Bachelor of Science</h3>
                 <h3 class="years">2016-2020</h3>
                 <p>
                     A high achieving Software Engineering 
@@ -86,7 +89,7 @@
                     of Engineering in Ashdod, In the fourth year.
                 </p>
                 <div>
-                    <h3>Practical Engineers degree</h3>
+                    <h3 class="sub-title">Practical Engineering Degree</h3>
                     <h3 class="years">2011-2013</h3>
                     <p>
                         Graduate practical electronics and 
@@ -95,7 +98,7 @@
                     </p>
                 </div>
                 <div>
-                    <h3>Full Matriculation</h3>
+                    <h3 class="sub-title">Full Matriculation</h3>
                     <h3 class="years">2005-2011</h3>
                     <p>
                         Full matriculation in the "Ironi-Alef" Ashkelon. 
@@ -105,7 +108,7 @@
             <div class="about-info-right">
                 <div>
                     <h2>Military Service </h2>
-                    <h3>IDF </h3>
+                    <h3 class="sub-title">IDF</h3>
                     <h3 class="years">2013-2016</h3>
                     <p>
                         Full operational service in the Gaza 
@@ -123,6 +126,7 @@
         </div>
     </section>
 
+ 
     <section id="skills">
         <h1 class="skills-header">Skills</h1>
         <div class="skills-header-line"></div>
@@ -155,10 +159,8 @@
                     <li><i class="fas fa-angle-right"></i>Data structures</li>
                     <li><i class="fas fa-angle-right"></i>Algorithms</li>
                     <li><i class="fas fa-angle-right"></i>Network protocols</li>
-                    <li><i class="fas fa-angle-right"></i>Multithreading</li>
                     <li><i class="fas fa-angle-right"></i>Web development</li>
                     <li><i class="fas fa-angle-right"></i>Android development</li>
-
                 </ul>
             </div>
         </div>
@@ -168,129 +170,205 @@
     <section id="projects">
         <h1 class="projects-header">Projects</h1>
         <div class="projects-header-line"></div>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="projects-grid">
-                    <div class="projects-left-first">
-                        <h2>XSS Scanner <img class="logos" src="./pictures/js-logo.png" alt="js-logo"></h2>
-                        <p>
-                            Following OWASP TOP 10 (the top ten most critical web application 
-                            security risk) I decided to build an XSS Scanner.
-                            In the Frontend I used <b>Vanilla Javascript</b> and in the Backend I used 
-                            <b>NodeJS</b> and <b>Express</b> for the server and <b>Puppeteer</b> for automation. 
-                        </p>
-                        <p>
-                            Puppeteer is an open source library developed by Google that was 
-                            built in purpose of automating and simplifying tests and development.
-                            
-                            The scanner getting link from the user and scan the website for 
-                            XSS vulnerability by injecting malicious script and check if the 
-                            website is running the script.
-                            The scanner is trying to inject variety of scripts for better results.
-                        </p>                   
-                     </div>
-
-                    <div class="projects-right">
-                        <video id="vid-1"  controls >
-                            <source  src="./pictures/xss_scanner.mp4"  type="video/mp4">
-                        </video>
+        <div class="projects-container">
+            <div class="project-box">
+                <img class="project-box-hero" src="./pictures/codewars-logo.png" ></img>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>Final Project - Codewars</h1>
+                        <img class="description-logo" src="./pictures/react-logo.png" alt="">
+                    </div>
+                    <p>
+                       <b>Full stack web application</b> for real-time code competition 
+                        against other users around the world, the project include 
+                        authentication & automatic code rating system 
+                        and many more features.
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2> 
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>React in the Frontend</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>NodeJS & Express in the Backend</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>MongoDB for the Database</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Asynchronous tasks, Axios</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Socket.IO</span> 
+                        </div>  
                     </div>
                 </div>
             </div>
 
-
-            <div class="mySlides fade">
-                <div class="projects-grid">
-                    <div class="projects-left">
-                        <h2>Codewars - Final Project<img class="react-logo" src="./pictures/react-logo.png" alt="react-logo"> </h2>
-                            <p>
-                               In this project after registration process and login with their
-                                account users will be required to make a level test to determine their coding skills 
-                                for better user experience.  
-                            </p>
-                            <p>
-                                Once they have successfully passed the level test they will 
-                                be able to <b>Compete</b> other users around the world (in <b>Real Time</b> using sockets)
-                                 that match their programing level, win "Wars", gain poitns and up levels.
-                            </p>
-                            <p>
-                               Its Fullstack Web application with <b>React</b> in the frontend and <b>Express</b> in the 
-                               backend for the server, all the data is saved in <b>MonogDB</b> database, all sensitive data is <b>Encrypted</b>.
-                               The project contains many more <b>Features</b> and will be uploaded to Github at the end.
-                            </p>                   
-                         </div>
-
-                    <div class="projects-right">
-                        <img src="./pictures//codewars-logo.png" class="codewars-logo" alt="">
+            <div class="project-box">
+                <video class="project-box-hero" src="./pictures/music_encryption.mp4" controls></video>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>Music Encryption</h1>
+                        <img height="30" width="30" src="./pictures/python-logo.svg" alt="">
                     </div>
-                </div>
+                    <p>
+                        Sending <b>encrypted</b> messages that are <b>concealed</b>  
+                        within audio file (.WAV) that means other 
+                        people can't pay attention to the difference 
+                        of sounds in the audio and if someone will 
+                        find the message it's still meaningless thanks 
+                        to encryption.
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Pycharm, Python</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>RSA Encryption</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Tkinter for GUI</span> 
+                        </div>
+                    </div>
+                </div>   
             </div>
-        
-            <div class="mySlides fade">
-                <div class="projects-grid">
-                    <div class="projects-left">
-                        <h2>Vehicle Agency <img class="logos" src="./pictures/java-logo.svg" alt="java-logo">  </h2>
-                        <p>
-                            In this project I build vehicle agency that have different types of  
-                            vehicles and variety of functionality for example to take vehicle 
-                            for test drive, buy vehicles, check vehicle history and much more.  
-                        </p>
-                        <p>
-                            The development language is <b>Java</b> and the IDE i worked with is Eclipse.
-                            Some principles were implemented in the project like <b>Multithreading</b>, 
-                            <b>Locks Synchronization</b>, <b>Design Patterns</b>, <b>OOP</b> and <b>Interfaces</b>. 
-                        </p>                    
-                    </div>
 
-                    <div class="projects-right">
-                        <video id="vid-1" controls >
-                            <source  src="./pictures/vid.mp4"  type="video/mp4">
-                        </video>
+            <div class="project-box">
+                <video class="project-box-hero" src="./pictures/xss_scanner.mp4" controls></video>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>XSS Scanner</h1>
+                        <img height="30" width="30" src="./pictures/js-logo.png" alt="">
                     </div>
-                </div>
+                    <p>
+                        Following OWASP TOP 10 (the top ten most critical web application 
+                        security risk) I decided to build an XSS Scanner.
+                        The scanner receives a link from the user and scan the website for 
+                        XSS vulnerability by <b>injecting malicious scripts</b> and check if the 
+                        website is safe or vulnerable to hackers.
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>JavaScript in the Frontend</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Puppeteer for the automation</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>NodeJS & Express in the Backend</span> 
+                        </div>
+                    </div>
+                </div> 
             </div>
-        
-            <div class="mySlides fade">
-                <div class="projects-grid">
-                    <div class="projects-left">
-                        <h2>Music Encryption <img class="logos" src="./pictures/python-logo.svg" alt="python-logo"> </h2>
-                            <p>
-                                In this project I build with my team software in 
-                                Python for sending messages <b>Secretly</b> the project 
-                                divided into two main tasks.  
-                            </p>
-                            <p>
-                                first one is to <b>Concealing</b>  
-                                the message in the audio file (.WAV) so if someone 
-                                will get the file and listen to it they will not pay 
-                                attention the file was change because the sounds didn't 
-                                change, and the second is the <b>Encryption</b>.
-                            </p>
-                            <p>
-                                we use  deterministic public key encryption <b>RSA</b>. 
-                                So, let's say the attacker knows there is a message 
-                                inside the audio file he still cannot read the message
-                            </p>                   
-                         </div>
 
-                    <div class="projects-right">
-                        <video id="vid-1" controls >
-                            <source  src="./pictures/music_encryption.mp4"  type="video/mp4">
-                        </video>
+            <div class="project-box">
+                <video class="project-box-hero" src="./pictures/vid.mp4" controls></video>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1 class="vehicle-agency-pos">Vehicle Agency</h1>
+                        <img height="40" width="40" src="./pictures/java-logo.svg" alt="">
                     </div>
-                </div>
+                    <p>
+                        In this project I build vehicle agency that have different types of  
+                        vehicles and variety of functionality for example to take a vehicle 
+                        for test drive, buy vehicles, check vehicle history and much more. 
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Eclipse, Java</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Design Patterns & Multithreading </span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>OOP & Inheritance </span> 
+                        </div>       
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="project-box">
+                <img  class="project-box-hero" src="./pictures/home_chef2.jpg" ></img>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>Home Chef</h1>
+                        <img height="40" width="30" src="./pictures/android_logo.gif" alt="">
+                    </div>
+                    <p>
+                        Android app that takes the ingredients that are available 
+                        at home and <b>recommends over 360K+ recipes</b> using API, additionally the app 
+                        have authentication system and all the data are saved in the database.
+                        Users can search and filter the results and save their 
+                        favorites recipes.
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Android, Java</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Firebase for the Database</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Working with API</span> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="project-box">
+                <img class="project-box-hero" src="./pictures/face_detection.png"></img>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>AI Face Detection</h1>
+                        <img height="30" width="30" src="./pictures/js-logo.png" alt="">
+                    </div>
+                    <p>
+                        Web application that detects facial expressions every second using the  
+                        webcam stream of yours computer and gives data about the persons mood 
+                        for example, if he happy, sad, angry, surprised etc.    
+                    </p>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>JavaScript</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Tensorflow API</span> 
+                        </div>  
+                    </div>
+                </div> 
             </div>
         </div>
-        
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div> 
     </section>
 
 
+    
    <section id="contact">
        <div class="contact-me">
            <div class="contact-me-center">
@@ -307,10 +385,9 @@
                 <h3 >Lets Be In Touch</h3>
                 <div class="contact-icons-flex">
                     <a href="https://www.linkedin.com/in/eli-naduyev"><img src="./pictures/linkedin.png" height="40px" width="40px" alt="" target="_blank"> </a>
-                    <a href="https://www.facebook.com/eli.naduyev"><img src="./pictures/facebook.png" height="40px" width="40px" alt="" target="_blank"> </a>
+                    <a href="mailto:elisce9091@gmail.com"><img src="./pictures/gmail_Icon.png" height="40px" width="60px" alt="" target="_blank"> </a>
                     <a href="https://github.com/EliNaduyev"><img src="./pictures/github.png" height="40px" width="40px" alt="" target="_blank"> </a>
                 </div>
- 
             </div>
        </div>
 
@@ -332,21 +409,19 @@
         <div class="loading-page-center">
             <h1>Loading Please Wait...</h1>
             <div class="loading-page-flex">
-                <img src="./pictures/loading_img.gif" alt="">
+                <img src="/pictures/loading_img.gif" alt="loading_icon">
             </div>
-        
         </div>
-        
     </div>
 
     <footer>
         <div class="footer-hr"></div>
         <div class="footer-flex">
             <div>Copyright ©2020 All rights reserved | Made by Eli Naduyev</div>       
-            <div class="visitors">
+            <!-- <div class="visitors">
                 <a href='https://www.symptoma.com/en/info/covid-19'>COVID-19</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=a6627e9b7843f50ab6cfef9be36c09f3052a7c4d'></script>
                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/673661/t/5"></script>
-            </div>
+            </div> -->
         </div>
     </footer>
 
