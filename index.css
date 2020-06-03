@@ -45,13 +45,15 @@ html,body{
 .navbar-links a{
     text-decoration: none;
     display: block;
-    color: rgb(255, 255, 255);
     transition: 0.3s all ease-in-out;    
 }
 
 .init-white{color: white;}
 
-.home-link{color: rgb(226, 213, 39);}
+.home-link{
+    color: rgb(226, 213, 39);
+    font-weight: bold;
+}
 
 .hover-link:hover{transform: scale(1.2);}
 
@@ -92,7 +94,6 @@ html,body{
     height: 100%;
     width: 100%;
     left: -100%;
-    border: 1px solid green;
     background-color: rgb(3, 18, 85);
     transition: 0.5s all ease-in-out;
     opacity: 0;
