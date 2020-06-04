@@ -1,16 +1,13 @@
 
 var i = 0
 var j = 0
-var k = 0
 
 var txt1 = 'Senior student of Software Engineering,'; 
-var txt2 = 'with big passion to Web & Application development,'; 
-var txt3 = 'looking for full time job.'; 
+var txt2 = 'with big passion to Web & Application development.'; 
 
 var speed = 30; 
 firstPara = document.querySelector('.typing-text-1')
 secondPara = document.querySelector('.typing-text-2')
-thirdPara = document.querySelector('.typing-text-3')
 
 function typeWriter() {
   if (i < txt1.length) {
@@ -29,20 +26,7 @@ function typeWriter2() {
     j++;
     setTimeout(typeWriter2, speed);
   }
-  else{typeWriter3()}
-
 }
-
-function typeWriter3() {
-
-  if (k < txt3.length) {
-    
-    thirdPara.innerHTML += txt3.charAt(k);
-    k++;
-    setTimeout(typeWriter3, speed);
-  }
-}
-
 
 window.onload = function(){ 
   let loading = document.querySelector(".loading-page")
