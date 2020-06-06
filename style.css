@@ -293,14 +293,11 @@ html,body{
 
     #intro p{font-size: 22px;}
 
-    .intro-contact-info{
-        margin-top: 20px;
-    }
+    .intro-contact-info{margin-top: 20px;}
 
     .intro-contact-info h2{
         font-size: 24px;
         margin-bottom: 2%;
-   
     }
 
     #intro h1{font-size: 45px;}
@@ -539,15 +536,36 @@ html,body{
 
     .skills-right li{font-size: 18px;}
 
-    .skills-right ul{
-        width: 80%;
-    }
+    .skills-right ul{width: 80%;}
 
     .skills-right h2{margin-right: 0px;}
 }
 
 footer{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
     text-align: center;
+}
+
+.footer-and-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 500px){
+
+    footer{padding-bottom: 5px;}
+    
+    .footer-and-counter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-and-counter{padding: 10px;}
 }
