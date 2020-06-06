@@ -7,9 +7,7 @@
 html,body{
     height: 100%;
     scroll-behavior: smooth;
-
 }
-
 
 .projetcs-container{
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
@@ -23,15 +21,15 @@ html,body{
 .nav-item{
     padding: 5px;
 }
+
 .center{
-    /* border:1px solid rgb(148, 27, 27); */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 60px;
-
 }
+
 .logo{
     display: flex;
     justify-content: center;
@@ -50,41 +48,34 @@ html,body{
     padding-bottom: 50px;  
 }
 
+@media only screen and (max-width: 600px){
+
+    .projects-inner-container{width: 90%;}
+}
+
 .contact-icons{
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: 10px;
 }
+
 .contact-icons a{
     text-decoration: none;
     color: black;
-
 }
+
 .contact-icons i{
     margin: 0 10px;
     font-size: 20px;
     transition: 0.2s ease-in-out all;
-
 }
 
-.contact-icons i:hover{
-    color: rgb(54, 153, 192);
-
-}
-
-
-
+.contact-icons i:hover{color: rgb(54, 153, 192);}
 
 #projects{
     padding-top: 40px;
     background-color: rgb(245, 245, 245);
-
-    /* background-image:linear-gradient(rgba(245, 240, 240, 0.5), rgba(0, 0, 0, 0)),
-    url("./pictures/test2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 .projects-header{
@@ -132,7 +123,6 @@ html,body{
     width: 100%;
     height: 200px;
 }
-
 
 .description{padding: 10px;}
 
@@ -191,19 +181,11 @@ html,body{
 }
 
 @media only screen and (max-width: 500px){
-    .projects-container{
-  
-        grid-template-columns: 1fr ;
-    }
+
+    .projects-container{grid-template-columns: 1fr ;}
+
+    .project-box{width: 95%;}
 }
-
-
-
-
-
-
-
-
 
 footer{
     padding: 20px;
