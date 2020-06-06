@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli Naduyev</title>
+     <!-- contact icons -->
+    <script src="https://use.fontawesome.com/da94fb4a64.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <!-- skills icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="outer-container">
+        <nav class="top-fixed-nav" onclick="openNav()">
+            <div class="humburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <h2>MENU</h2>
+        </nav>
+
+        <div class="side-navbar">
+            <div class="close-side-navbar"><i onclick="closeNav()" class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="side-nav-name-img">
+                <h2>Eli Naduyev</h2>
+                <img src="./pictures/my-pic.jpg" alt="">
+            </div>
+            <ul class="side-navbar-links">
+
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="#skills"><i class="fa fa-line-chart" aria-hidden="true"></i> Skills</a></li>
+                <li><a href="./projects.html"><i class="fa fa-code" aria-hidden="true"></i> Projects</a></li>
+
+            </ul> 
+            <div class="side-nav-icons">
+                <a target="_blank" href="https://github.com/EliNaduyev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/eli-naduyev"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="mailto:elisce9091@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>       
+        </div>
+
+        <div id="intro">
+            <div class="intro-animation">
+                <h1>Hello I'm <span class="name-in-color">Eli Naduyev</span></h1>
+                <p>
+                    Senior student of Software Engineering with big passion to
+                    <span class="break">Web and Application development</span>    
+                </p>
+              
+                <button class="intro-btn" onclick="showEmail()">Contact Me</button>
+                <br>
+                <div class="intro-contact-info">
+                    <h2>
+                        <span class="material-icons blue-color-icon">email</span>
+                        <a href="mailto:elisce9091@gmail.com">elisce9091@gmail.com</a>
+                    </h2>
+                    <h2>
+                        <span class="material-icons phone-icon blue-color-icon">phone</span>
+                        <a href="tel:0542110645">0542110645</a>
+                    </h2>
+                </div>    
+            </div>
+   
+        </div>
+
+        <div class="inner-container">
+
+            <ul class="nav nav-tabs">
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+
+                <div class="contact-icons">
+                    <a target="_blank" href="https://github.com/EliNaduyev"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/eli-naduyev"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a target="_blank" href="mailto:elisce9091@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </ul>
+
+            <section id=about>
+                <h1 class="about-header">About</h1>
+                <div class="about-line"></div>
+
+                <div class="about-grid">
+    
+                    <div class="about-info-left">
+                        <h2>Education</h2>
+                        <h3 class="sub-title">Bachelor of Science</h3>
+                        <h3 class="years">2016-2020</h3>
+                        <p>
+                            A high achieving Software Engineering 
+                            student studying at Sami Shamoon College 
+                            of Engineering in Ashdod, In the fourth year.
+                        </p>
+                        <div>
+                            <h3 class="sub-title">Practical Engineering Degree</h3>
+                            <h3 class="years">2011-2013</h3>
+                            <p>
+                                Graduate practical electronics and 
+                                computer engineering through the "Marom 
+                                Technology Project" in Be'er Sheva. 
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="sub-title">Full Matriculation</h3>
+                            <h3 class="years">2005-2011</h3>
+                            <p>
+                                Full matriculation in the "Ironi-Alef" Ashkelon. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-info-right">
+                        <div>
+                            <h2>Military Service </h2>
+                            <h3 class="sub-title">IDF</h3>
+                            <h3 class="years">2013-2016</h3>
+                            <p>
+                                Full operational service in the Gaza 
+                                Division as a tactical communication technician 
+                                in the "tikshuv" force, First Sergeant Release.
+                            </p>
+                            <p>
+                                I managed teams up to 5-6 people in the lab and in the field.
+                            </p>         
+                            <p>
+                                Honors soldier with high ability to identify and quickly solve problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="skills">
+                <div class="headers">
+                    <h1 class="skills-header">Skills</h1>
+                    <div class="skills-header-line"></div>
+                </div>
+               
+                <div class="skills-grid">
+                    <div class="skills-left">
+                        <h2>Programing Languages & Frameworks</h2>
+                        <ul>
+                            <li><i class="devicon-c-plain-wordmark"></i></li>
+                            <li><i class="devicon-cplusplus-plain-wordmark"></i></li>
+                            <li><i class="devicon-python-plain-wordmark"></i></li> 
+                            <li><i class="devicon-java-plain-wordmark"></i></li> 
+                            <li><i class="devicon-html5-plain-wordmark"></i></li> 
+                            <li><i class="devicon-css3-plain-wordmark"></i></li> 
+                            <li><i class="devicon-javascript-plain"></i></li> 
+                            <li><i class="devicon-mysql-plain-wordmark"></i></li>
+                            <li><i class="devicon-nodejs-plain-wordmark"></i></li>
+                            <li><i class="devicon-react-original-wordmark"></i></li>
+                            <li><i class="devicon-mongodb-plain-wordmark"></i></li>
+                            <li><i class="devicon-android-plain-wordmark"></i></li>
+                        </ul>
+                    </div>
+        
+                    <div class="skills-right">
+                        <h2 >Academic Experience</h2>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i>Design pattern</li>
+                            <li><i class="fas fa-angle-right"></i>OOP</li>
+                            <li><i class="fas fa-angle-right"></i>Computer architecture</li>
+                            <li><i class="fas fa-angle-right"></i>Operating systems</li>
+                            <li><i class="fas fa-angle-right"></i>Data structures</li>
+                            <li><i class="fas fa-angle-right"></i>Algorithms</li>
+                            <li><i class="fas fa-angle-right"></i>Network protocols</li>
+                            <li><i class="fas fa-angle-right"></i>Web development</li>
+                            <li><i class="fas fa-angle-right"></i>Android development</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+  
+        <footer>Copyright ©2020 All rights reserved | Made by Eli Naduyev</footer>
+    </div>
+   
+
+    <script src="https://kit.fontawesome.com/22132ec076.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
