@@ -173,6 +173,11 @@ html,body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+@media only screen and (max-height: 465px){
+
+    .side-nav-name-img{display: none;}
+}
+
 
 /* ------------------- intro ------------------- */
 
@@ -323,6 +328,14 @@ html,body{
 }
 
 @media only screen and (max-width: 320px){.intro-contact-info h2{font-size: 20px;}}
+
+@media only screen and (max-height: 465px){
+
+    #intro{
+        height: 140vh;
+        padding-top: 50px;
+    }
+}
 
 
 .inner-container{
