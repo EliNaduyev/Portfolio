@@ -15,12 +15,9 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 50px;
 }
 
-.nav-item{
-    padding: 5px;
-}
+.nav-item{padding: 5px;}
 
 .center{
     display: flex;
@@ -93,8 +90,8 @@ html,body{
     margin-bottom: 20px;
 }
 
-.projects-container{
-    padding-top: 50px;
+.section-projects-container{
+    padding-top: 20px;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -174,15 +171,14 @@ html,body{
     font-weight: bold;
 }
 
-
 @media only screen and (max-width: 950px){
 
-    .projects-container{grid-template-columns: 1fr 1fr ;}
+    .section-projects-container{grid-template-columns: 1fr 1fr ;}
 }
 
 @media only screen and (max-width: 500px){
 
-    .projects-container{grid-template-columns: 1fr ;}
+    .section-projects-container{grid-template-columns: 1fr ;}
 
     .project-box{width: 95%;}
 }
