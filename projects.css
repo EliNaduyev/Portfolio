@@ -171,14 +171,12 @@ html,body{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 800px){
 
-    .section-projects-container{grid-template-columns: 1fr 1fr ;}
+    .section-projects-container{grid-template-columns: 1fr ;}
 }
 
 @media only screen and (max-width: 500px){
-
-    .section-projects-container{grid-template-columns: 1fr ;}
 
     .project-box{width: 95%;}
 }
