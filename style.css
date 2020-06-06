@@ -9,7 +9,6 @@ html,body{
     scroll-behavior: smooth;
 }
 
-
 .outer-container{
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("./pictures/main-bg.jpg");
@@ -17,10 +16,11 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 /* ---------- top right nav ---------- */
 
 .top-fixed-nav{
-  
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -31,28 +31,21 @@ html,body{
     right: 0;
     transition: 0.3s ease-in-out all;
     z-index: 99;
-
 }
 
-.top-fixed-nav:hover{
-    color: rgb(129, 196, 223);
+.top-fixed-nav:hover{color: rgb(129, 196, 223);}
 
-}
 .top-fixed-nav h2{
     margin-top: 8px;
-    /* color: white; */
     font-size: 17px;
     margin-right: 10px;
-
-  
 }
-.humburger{
 
+.humburger{
     padding: 8px;
     height: 30px;
     width: 35px;
     transition: 0.3s all ease-in-out;
-    /* display: none; */
 }
 
 .line{
@@ -61,9 +54,7 @@ html,body{
     border-radius: 4px;
 }
 
-.nav-item{
-    padding: 5px;
-}
+.nav-item{padding: 5px;}
 
 .contact-icons{
     display: flex;
@@ -71,22 +62,19 @@ html,body{
     margin-left: auto;
     margin-right: 10px;
 }
+
 .contact-icons a{
     text-decoration: none;
     color: black;
-
 }
+
 .contact-icons i{
     margin: 0 10px;
     font-size: 20px;
     transition: 0.2s ease-in-out all;
-
 }
 
-.contact-icons i:hover{
-    color: rgb(54, 153, 192);
-
-}
+.contact-icons i:hover{color: rgb(54, 153, 192);}
 
 /* ------------- side navbar ------------- */
 
@@ -102,9 +90,7 @@ html,body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
-.side-navbar-links{
-    list-style: none;
-}
+.side-navbar-links{list-style: none;}
 
 .side-navbar-links li{
     padding: 10px;
@@ -119,13 +105,9 @@ html,body{
     transition: 0.3s ease-in-out all;
 }
 
-.side-navbar-links li a i{
-    margin-right: 10px;
-}
+.side-navbar-links li a i{margin-right: 10px;}
 
-.side-navbar-links li a:hover{
-    color: rgb(84, 172, 207);
-}
+.side-navbar-links li a:hover{color: rgb(84, 172, 207);}
 
 .close-side-navbar{
     height: 20px;
@@ -152,9 +134,7 @@ html,body{
     transition: 0.2s ease-in-out all;
 }
 
-.close-side-navbar i:hover {
-    color: rgb(54, 153, 192);
-}
+.close-side-navbar i:hover {color: rgb(54, 153, 192);}
 
 .side-nav-icons{
     text-align: center;
@@ -191,7 +171,6 @@ html,body{
     width: 95px;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -224,16 +203,13 @@ html,body{
     font-weight: bold;
 }
 
-
 #intro p{
     font-size: 25px;
     font-family: 'Montaga', serif;
     margin: 0;
 }
 
-.break{
-    display: block;
-}
+.break{display: block;}
 
 .name-in-color{
     color: rgb(52, 143, 204);
@@ -252,10 +228,7 @@ html,body{
     transition: 0.4s ease-in-out all;
 }
 
-.intro-btn:hover{
-    transform: scale(1.1);
-}
-
+.intro-btn:hover{transform: scale(1.1);}
 
 .intro-contact-info{
     margin-top: 3%;
@@ -280,6 +253,7 @@ html,body{
     transform: translateY(0);
     opacity: 1;
 }
+
 .phone-icon{padding-bottom: 8px;}
 
 .intro-contact-info a{
@@ -294,35 +268,30 @@ html,body{
 }
 
 @media only screen and (max-width: 900px){
+
     #intro{
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    #intro p{
-        font-size: 27px;
-    
-    }
+    #intro p{font-size: 27px;}
 }
 
 @media only screen and (max-width: 800px){
-    .break{
-        display: inline;
-    }
 
+    .break{display: inline;}
 }
+
 @media only screen and (max-width: 600px){
+
     #intro{
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    
-    #intro p{
-        font-size: 22px;
-    }
+    #intro p{font-size: 22px;}
 
     .intro-contact-info{
         margin-top: 20px;
@@ -334,10 +303,7 @@ html,body{
    
     }
 
-    #intro h1{
-        font-size: 45px;
-    }
-
+    #intro h1{font-size: 45px;}
 }
 
 
@@ -349,28 +315,17 @@ html,body{
         margin-bottom: 50px;
     }
 
-    #intro h1{
-        font-size: 40px;
-    }
-    
+    #intro h1{font-size: 40px;}
     
     #intro p{
         font-size: 18px;
         font-family: 'Montaga', serif;
-    
     }
 
-    .intro-contact-info{
-        margin-top: 20px;
-    }
-
-    
-  
+    .intro-contact-info{margin-top: 20px;}
 }
 
 @media only screen and (max-width: 320px){.intro-contact-info h2{font-size: 20px;}}
-
-
 
 
 .inner-container{
@@ -379,6 +334,10 @@ html,body{
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px){
+
+    .inner-container{width: 90%;}
+}
 
 /* ------------- about ------------- */
 
@@ -402,11 +361,8 @@ html,body{
     border: 2px solid rgb(38, 64, 177);
     width: 50px;
     margin-top: 5px;
-    /* margin-bottom: 10px; */
     margin-left: 15px;
 }
-
-
 
 .about-grid{
     display: grid;
@@ -449,9 +405,7 @@ html,body{
     padding-top: 6px;
     font-size: 16px;
     font-weight: bold;
-
 }
-
 
 .about-info-left{padding: 15px;}
 
@@ -545,7 +499,6 @@ html,body{
     opacity: 1;
     transform: translateY(0px);
 }
-
 
 .skills-right ul{
     width: 350px;
