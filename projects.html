@@ -17,6 +17,23 @@
         <h1 class="logo">PROJECTS</h1>
     </div>
 
+    <div class="intro-contact-info">
+        <h2 class='h2-project-contact'>
+            Lets Be In Touch
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </h2>
+        <div class='intro-contact-info-flex'>
+            <h2>
+                <span class="material-icons blue-color-icon">Email:</span>
+                <a href="mailto:elisce9091@gmail.com">elisce9091@gmail.com</a>
+            </h2>
+            <h2>
+                <span class="material-icons phone-icon blue-color-icon">Phone:</span>
+                <a href="tel:0542110645">0542110645</a>
+            </h2>
+        </div>
+    </div>    
+
     <div class="projects-inner-container">
         <ul class="nav nav-tabs">
 
@@ -31,25 +48,33 @@
               <a target="_blank" href="https://github.com/EliNaduyev"><i class="fa fa-github" aria-hidden="true"></i></a>
               <a target="_blank" href="https://www.linkedin.com/in/eli-naduyev"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
               <a target="_blank" href="mailto:elisce9091@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="tel:0542110645"><i class="fa fa-phone phone-icon" aria-hidden="true"></i></a>
           </div>
         </ul>
 
-
         <section id="projects">
-          <div class="section-projects-container">
-              <div class="project-box">
-                  <img class="project-box-hero" src="./pictures/codewars-logo.png" ></img>
-                  <div class="description">
-                      <div class="description-nameAndLogo">
-                          <h1>Final Project - Codewars</h1>
-                          <img class="description-logo" src="./pictures/react-logo.png" alt="">
-                      </div>
+            <div class="section-projects-container">
+                <div class="project-box">
+                    <img class="project-box-hero" src="./pictures/codewars-logo.png" ></img>
+                    <div class="description">
+                        <div class="description-nameAndLogo">
+                            <h1>Final Project - Codewars</h1>
+                            <img class="description-logo" src="./pictures/react-logo.png" alt="">
+                        </div>
                       <p>
                          <b>Full stack web application</b> for real-time code competition 
                           against other users around the world, the project include 
                           authentication & automatic code rating system 
                           and many more features.
                       </p>
+                      <div class='github-and-livedemo'>
+                          <a target="_blank" href="https://github.com/EliNaduyev/Codewars">
+                            <button class='projects-gitub-btn'>GitHub</button>
+                          </a>
+                          <a target="_blank" href="https://codewars-project.netlify.app/">
+                            <button class='projects-livedemo-btn'>Live Demo</button>
+                          </a>
+                      </div>
                       <div class="project-box-tech">
                           <h2>Technology</h2> 
                           <div class="tech-item-info">
@@ -74,9 +99,54 @@
                           </div>  
                       </div>
                   </div>
-              </div>
+                </div>
 
-              <div class="project-box">
+                <div class="project-box">
+                    <img class="project-box-hero" src="./pictures/barber.png" ></img>
+                    <div class="description">
+                        <div class="description-nameAndLogo">
+                            <h1>Barbershop</h1>
+                            <img class="description-logo" src="./pictures/react-logo.png" alt="">
+                        </div>
+                        <p>
+                        <b>Full stack web application</b> for booking appointments 
+                        at the barbershop. 
+                        <b>Users</b> can schedule, change and cancel their appointments on their profile page.
+                        <b>Administrators</b> have a control panel where they can manage all 
+                        scheduled appointments and users in the system.
+                            
+                        </p>
+                        <div class='github-and-livedemo'>
+                            <a target="_blank" href="https://github.com/EliNaduyev/Barbershop">
+                            <button class='projects-gitub-btn'>GitHub</button>
+                            </a>
+                            <a target="_blank" href="https://barber-appointments.netlify.app/">
+                            <button class='projects-livedemo-btn'>Live Demo</button>
+                            </a>
+                        </div>
+                        <div class="project-box-tech">
+                            <h2>Technology</h2> 
+                            <div class="tech-item-info">
+                                <img src="./pictures/star.png" alt="">
+                                <span>React in the Frontend</span> 
+                            </div>
+                            <div class="tech-item-info">
+                                <img src="./pictures/star.png" alt="">
+                                <span>NodeJS & Express in the Backend</span> 
+                            </div>
+                            <div class="tech-item-info">
+                                <img src="./pictures/star.png" alt="">
+                                <span>MongoDB for the Database</span> 
+                            </div>
+                            <div class="tech-item-info">
+                                <img src="./pictures/star.png" alt="">
+                                <span>Asynchronous tasks, Axios</span> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+            <div class="project-box">
                 <img  class="project-box-hero" src="./pictures/home_chef2.jpg" ></img>
                 <div class="description">
                     <div class="description-nameAndLogo">
@@ -90,6 +160,11 @@
                         Users can search and filter the results and save their 
                         favorites recipes.
                     </p>
+                    <div class='github-and-livedemo'>
+                        <a target="_blank" href="https://github.com/EliNaduyev/Home-Chef">
+                          <button class='projects-gitub-btn'>GitHub</button>
+                        </a>
+                    </div>
                     <div class="project-box-tech">
                         <h2>Technology</h2>
                         <div class="tech-item-info">
@@ -109,6 +184,40 @@
             </div>
 
             <div class="project-box">
+                <img class="project-box-hero" src="./pictures/face_detection.png"></img>
+                <div class="description">
+                    <div class="description-nameAndLogo">
+                        <h1>AI Face Detection</h1>
+                        <img height="30" width="30" src="./pictures/js-logo.png" alt="">
+                    </div>
+                    <p>
+                        Web application that detects facial expressions every second using the  
+                        webcam stream of yours computer and gives data about the persons mood 
+                        for example, if he happy, sad, angry, surprised etc.    
+                    </p>
+                    <div class='github-and-livedemo'>
+                        <a target="_blank" href="https://github.com/EliNaduyev/AI-Expression-Detection">
+                          <button class='projects-gitub-btn'>GitHub</button>
+                        </a>
+                        <a target="_blank" href="https://face-expressions-detection.netlify.app/">
+                          <button class='projects-livedemo-btn'>Live Demo</button>
+                        </a>
+                    </div>
+                    <div class="project-box-tech">
+                        <h2>Technology</h2>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>JavaScript</span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>Tensorflow API</span> 
+                        </div>  
+                    </div>
+                </div> 
+              </div>
+
+            <div class="project-box">
                 <video class="project-box-hero" src="./pictures/music_encryption.mp4" controls></video>
                 <div class="description">
                     <div class="description-nameAndLogo">
@@ -123,6 +232,11 @@
                         find the message it's still meaningless thanks 
                         to encryption.
                     </p>
+                    <div class='github-and-livedemo'>
+                        <a target="_blank" href="https://github.com/EliNaduyev/Music-Encryption">
+                          <button class='projects-gitub-btn'>GitHub</button>
+                        </a>
+                    </div>
                     <div class="project-box-tech">
                         <h2>Technology</h2>
                         <div class="tech-item-info">
@@ -155,6 +269,11 @@
                         XSS vulnerability by <b>injecting malicious scripts</b> and check if the 
                         website is safe or vulnerable to hackers.
                     </p>
+                    <div class='github-and-livedemo'>
+                        <a target="_blank" href="https://github.com/EliNaduyev/XSS-Scanner">
+                          <button class='projects-gitub-btn'>GitHub</button>
+                        </a>
+                    </div>
                     <div class="project-box-tech">
                         <h2>Technology</h2>
                         <div class="tech-item-info">
@@ -173,64 +292,43 @@
                 </div> 
             </div>
 
+
             <div class="project-box">
-                <img class="project-box-hero" src="./pictures/face_detection.png"></img>
+                <video class="project-box-hero" src="./pictures/vid.mp4" controls></video>
                 <div class="description">
                     <div class="description-nameAndLogo">
-                        <h1>AI Face Detection</h1>
-                        <img height="30" width="30" src="./pictures/js-logo.png" alt="">
+                        <h1 class="vehicle-agency-pos">Vehicle Agency</h1>
+                        <img height="40" width="40" src="./pictures/java-logo.svg" alt="">
                     </div>
                     <p>
-                        Web application that detects facial expressions every second using the  
-                        webcam stream of yours computer and gives data about the persons mood 
-                        for example, if he happy, sad, angry, surprised etc.    
+                        In this project I build vehicle agency that have different types of  
+                        vehicles and variety of functionality for example to take a vehicle 
+                        for test drive, buy vehicles, check vehicle history and much more. 
                     </p>
+                    <div class='github-and-livedemo'>
+                        <a target="_blank" href="https://github.com/EliNaduyev/Vehicles-Agency">
+                            <button class='projects-gitub-btn'>GitHub</button>
+                        </a>
+                    </div>
                     <div class="project-box-tech">
                         <h2>Technology</h2>
                         <div class="tech-item-info">
                             <img src="./pictures/star.png" alt="">
-                            <span>JavaScript</span> 
+                            <span>Eclipse, Java</span> 
                         </div>
                         <div class="tech-item-info">
                             <img src="./pictures/star.png" alt="">
-                            <span>Tensorflow API</span> 
-                        </div>  
+                            <span>Design Patterns & Multithreading </span> 
+                        </div>
+                        <div class="tech-item-info">
+                            <img src="./pictures/star.png" alt="">
+                            <span>OOP & Inheritance </span> 
+                        </div>       
                     </div>
                 </div> 
-              </div>
-
-
-              <div class="project-box">
-                  <video class="project-box-hero" src="./pictures/vid.mp4" controls></video>
-                  <div class="description">
-                      <div class="description-nameAndLogo">
-                          <h1 class="vehicle-agency-pos">Vehicle Agency</h1>
-                          <img height="40" width="40" src="./pictures/java-logo.svg" alt="">
-                      </div>
-                      <p>
-                          In this project I build vehicle agency that have different types of  
-                          vehicles and variety of functionality for example to take a vehicle 
-                          for test drive, buy vehicles, check vehicle history and much more. 
-                      </p>
-                      <div class="project-box-tech">
-                          <h2>Technology</h2>
-                          <div class="tech-item-info">
-                              <img src="./pictures/star.png" alt="">
-                              <span>Eclipse, Java</span> 
-                          </div>
-                          <div class="tech-item-info">
-                              <img src="./pictures/star.png" alt="">
-                              <span>Design Patterns & Multithreading </span> 
-                          </div>
-                          <div class="tech-item-info">
-                              <img src="./pictures/star.png" alt="">
-                              <span>OOP & Inheritance </span> 
-                          </div>       
-                      </div>
-                  </div> 
-              </div>
-          </div>
-      </section>
+            </div>
+        </div>
+    </section>
     </div>
 
     <footer>Copyright ©2020 All rights reserved | Made by Eli Naduyev</footer>
