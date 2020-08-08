@@ -74,6 +74,10 @@ html,body{
     transition: 0.2s ease-in-out all;
 }
 
+.phone-icon{
+    font-size: 18px !important;
+}
+
 .contact-icons i:hover{color: rgb(54, 153, 192);}
 
 /* ------------- side navbar ------------- */
@@ -124,7 +128,7 @@ html,body{
     opacity: 1;
 }
 
-.close-side-navbar i {
+.close-side-navbar i{
     padding: 10px;
     position: absolute;
     right: 10px;
@@ -171,6 +175,13 @@ html,body{
     width: 95px;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.side-nav-email-and-phone{padding: 10px;}
+
+.side-nav-email-and-phone p{
+    margin: 0;
+    padding: 5px;
 }
 
 @media only screen and (max-height: 465px){
@@ -235,41 +246,47 @@ html,body{
 
 .intro-btn:hover{transform: scale(1.1);}
 
-.intro-contact-info{
-    margin-top: 3%;
-    transform: translateY(70px);
-    transition: 0.5s all ease-in-out;
-    opacity: 0;
-    font-family:'Indie Flower', cursive;
-    letter-spacing: 2px;
-    display: inline-block;
+.hero-btn{
+    height: 37px;
+    border: none;
+    width: 170px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
 }
 
-.intro-contact-info h2{
-    margin-bottom: 2%;
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
+.btn-about-me{background-color: rgb(52, 143, 204);}
+
+.btn-about-me:hover{background-color: rgb(7, 108, 175);}
+
+.btn-my-work{
+    background-color: transparent;
+    border: 2px solid rgb(52, 143, 204);
 }
 
-.blue-color-icon{color: rgb(63, 181, 236);}
+.btn-my-work:hover{border: 2px solid rgb(0, 96, 160);}
 
-.show-intro-contact-info{
-    transform: translateY(0);
-    opacity: 1;
-}
+@media only screen and (min-width: 1600px){
 
-.phone-icon{padding-bottom: 8px;}
+    #intro h1{
+        font-size: 65px;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    #intro p{
+        font-size: 30px;
+        font-family: 'Montaga', serif;
+        margin: 0;
+    }
 
-.intro-contact-info a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
-}
+    .hero-btn{margin-top: 30px;}
 
-.intro-contact-info a:hover{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 900px){
@@ -306,6 +323,12 @@ html,body{
     }
 
     #intro h1{font-size: 45px;}
+
+    .hero-btn{
+        height: 30px;
+        width: 130px;
+        font-size: 14px;
+    }
 }
 
 
@@ -402,7 +425,7 @@ html,body{
     font-weight: bold;
 }
 
-#about h2{color:rgb(38, 77, 133);}
+#about h2{color: rgb(50, 147, 185);}
 
 .years{
     background-color: rgb(226, 236, 250);
@@ -416,6 +439,7 @@ html,body{
     font-size: 16px;
     font-weight: bold;
 }
+
 
 .about-info-left{padding: 15px;}
 
