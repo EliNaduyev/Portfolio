@@ -105,7 +105,6 @@ html,body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 60px;
     max-width: 580px;
-
     transition: 0.5s all ease-in-out;
     opacity: 1;
     transform: translateY(30px);
@@ -157,9 +156,7 @@ html,body{
     transition: all ease-in-out 0.3s;
 }
 
-.github-and-livedemo a{
-    text-decoration: none;
-}
+.github-and-livedemo a{text-decoration: none;}
 
 .projects-gitub-btn{
     color: white;
@@ -167,10 +164,7 @@ html,body{
     border: none;
 }
 
-.projects-gitub-btn:hover{
-    background-color: rgb(7, 108, 175);
-
-}
+.projects-gitub-btn:hover{background-color: rgb(7, 108, 175);}
 
 .projects-livedemo-btn{
     color: rgb(52, 143, 204);
@@ -183,8 +177,6 @@ html,body{
     border: 2px solid rgb(0, 96, 160);
     background-color: rgb(240, 240, 240);
 }
-
-
 
 .tech-item-info{
     display: flex;
@@ -214,9 +206,7 @@ html,body{
     transform: translateX(-300px) rotate(-20deg);
     opacity: 0;
     transition: 1s all ease-in-out;
-    font-family:'Indie Flower', cursive;
     letter-spacing: 2px;
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,6 +228,7 @@ html,body{
 .h2-project-contact{
     color: rgb(255, 255, 255);
     font-size: 27px;
+    font-family:'Indie Flower', cursive;
 }
 
 .intro-contact-info-flex h2{
