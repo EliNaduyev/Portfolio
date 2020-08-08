@@ -17,14 +17,16 @@ html,body{
     background-size: cover;
 }
 
+.nav{background-color: rgb(253, 253, 253);}
+
 .nav-item{padding: 5px;}
 
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .logo{
@@ -39,7 +41,7 @@ html,body{
 }
 
 .projects-inner-container{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(245, 245, 245);
     width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;  
@@ -70,10 +72,7 @@ html,body{
 
 .contact-icons i:hover{color: rgb(54, 153, 192);}
 
-#projects{
-    padding-top: 40px;
-    background-color: rgb(245, 245, 245);
-}
+#projects{padding-top: 40px;}
 
 .projects-header{
     font-family: Arial, Helvetica, sans-serif;
@@ -104,7 +103,8 @@ html,body{
     width: 90%;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    max-width: 580px;
 
     transition: 0.5s all ease-in-out;
     opacity: 1;
@@ -118,7 +118,7 @@ html,body{
 
 .project-box-hero{
     width: 100%;
-    height: 200px;
+    height: 260px;
 }
 
 .description{padding: 10px;}
@@ -147,6 +147,45 @@ html,body{
     font-size: 21px;
     font-weight: bold;
 }
+
+.github-and-livedemo button{
+    width: 120px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.github-and-livedemo a{
+    text-decoration: none;
+}
+
+.projects-gitub-btn{
+    color: white;
+    background-color: rgb(52, 143, 204);
+    border: none;
+}
+
+.projects-gitub-btn:hover{
+    background-color: rgb(7, 108, 175);
+
+}
+
+.projects-livedemo-btn{
+    color: rgb(52, 143, 204);
+    background-color: transparent;
+    border: 2px solid rgb(52, 143, 204);
+}
+
+.projects-livedemo-btn:hover{
+    color: rgb(9, 114, 185);
+    border: 2px solid rgb(0, 96, 160);
+    background-color: rgb(240, 240, 240);
+}
+
+
+
 .tech-item-info{
     display: flex;
     align-items: center;
@@ -171,9 +210,88 @@ html,body{
     font-weight: bold;
 }
 
+.intro-contact-info{
+    transform: translateX(-300px) rotate(-20deg);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    font-family:'Indie Flower', cursive;
+    letter-spacing: 2px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.show-intro-contact-info{
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+}
+
+.intro-contact-info-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-project-contact{
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+}
+
+.intro-contact-info-flex h2{
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.blue-color-icon{color: rgb(63, 181, 236);}
+
+.intro-contact-info a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.intro-contact-info a:hover{color: rgb(255, 255, 255);}
+
+
+@media only screen and (min-width: 1950px){
+
+    .project-box{margin-bottom: 70px;}
+
+    .section-projects-container{grid-template-columns: 1fr 1fr 1fr;}
+
+    .description p{
+        line-height: 25px;
+        font-size: 19px;
+    }
+
+    .project-box-tech span{font-size: 17px;}
+
+    .project-box-tech h2{font-size: 19px;}
+}
+
 @media only screen and (max-width: 800px){
 
     .section-projects-container{grid-template-columns: 1fr ;}
+}
+
+@media only screen and (max-width: 690px){
+
+    .intro-contact-info-flex h2{
+        margin: 5px 0px;
+        font-size: 24px;
+    }
+
+    .intro-contact-info-flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (max-width: 500px){
