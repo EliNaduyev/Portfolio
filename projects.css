@@ -269,7 +269,7 @@ html,body{
 
 @media only screen and (max-width: 800px){
 
-    .section-projects-container{grid-template-columns: 1fr ;}
+    .section-projects-container{grid-template-columns: 1fr;}
 }
 
 @media only screen and (max-width: 690px){
@@ -286,6 +286,13 @@ html,body{
 }
 
 @media only screen and (max-width: 500px){
+
+    .project-box-hero{height: 200px;}
+
+    .github-and-livedemo button{
+        width: 110px;
+        padding: 3px 5px;
+    }
 
     .project-box{width: 95%;}
 }
