@@ -120,7 +120,7 @@ html,body{
     height: 260px;
 }
 
-.description{padding: 10px;}
+.description{padding: 15px;}
 
 .description p{
     line-height: 23px;
@@ -145,6 +145,10 @@ html,body{
 .description-nameAndLogo h1{
     font-size: 21px;
     font-weight: bold;
+}
+
+#angular-logo{
+    width: 45px;
 }
 
 .github-and-livedemo button{
@@ -267,12 +271,23 @@ html,body{
     .project-box-tech h2{font-size: 19px;}
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1100px){
+    .projects-inner-container{
+        width: 90%;
+    }
+}
 
+@media only screen and (max-width: 900px){
+
+    .projects-inner-container{
+        width: 75%;
+    }
     .section-projects-container{grid-template-columns: 1fr;}
 }
 
 @media only screen and (max-width: 690px){
+
+    .projects-inner-container{width: 85%;}
 
     .intro-contact-info-flex h2{
         margin: 5px 0px;
